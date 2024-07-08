@@ -1,0 +1,7 @@
+export BORG_PASSCOMMAND="cat $HOME/.passwd_borg"
+
+create_opts='--verbose --filter AME --list --stats --compression lz4'
+dirs_to_backup=
+exclude="--exclude-from $config_dir/exclude.txt"
+keep_policy='--keep-daily 7 --keep-weekly 4 --keep-monthly 1'
+

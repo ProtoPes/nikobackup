@@ -1,0 +1,15 @@
+# Base name for archives, output will be: [base_name-date-UTC]
+archive_name=
+
+# Path to borg repository starting from mountpoint
+backup_repo=
+
+# This is only for logging
+dest_name=
+
+# Setting this, so the repo does not need to be given on the commandline:
+BORG_REPO="$mount_dir/$backup_repo"
+
+# Variables for mounting
+mount_dir=
+mount_opts=
