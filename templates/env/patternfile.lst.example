@@ -1,0 +1,13 @@
+    # note that excludes use fm: by default and patternfiles use sh: by default.
+    # therefore, we need to specify fm: to have the same exact behavior.
+
+    # This file is equivalent to this:
+    # borg create --exclude home/bobby/junk repo::arch /home/bobby /home/susa
+
+    # To use this file:
+    # borg create --patterns-from patternfile.lst repo::arch
+    P fm
+    R /home/bobby
+    R /home/susan
+
+    - home/bobby/junk

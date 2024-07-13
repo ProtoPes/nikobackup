@@ -7,9 +7,11 @@ backup_repo=
 # This is only for logging
 dest_name=
 
+# Path to mount point from root
+mount_dir=
+
+# Mounting options, can be blank, do not use variables!
+mount_opts=
+
 # Setting this, so the repo does not need to be given on the commandline:
 BORG_REPO="$mount_dir/$backup_repo"
-
-# Variables for mounting
-mount_dir=
-mount_opts=
